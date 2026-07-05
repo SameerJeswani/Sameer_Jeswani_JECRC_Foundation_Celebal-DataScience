@@ -1,10 +1,35 @@
-# Simple RAG Project
+# Document Question Answering System (RAG)
 
-1. pip install -r requirements.txt
-2. Create .env from .env.example
-3. Put your OpenAI API key in .env
-4. Place environment.pdf or cricket.txt in the project folder.
-5. Run:
-   python chatbot_pdf_loader.py
-or
-   python chatbot_text_loader.py
+## Overview
+
+This project is a simple Document Question Answering System built using LangChain and OpenAI.
+
+It loads custom PDF or Text documents and answers user questions only based on the content of those documents.
+
+## Features
+
+- Load PDF documents
+- Load Text documents
+- Answer questions from uploaded documents
+- Uses LangChain Document Loaders
+- Maintains conversation history
+- Returns "I don't know" if the answer is not present in the document
+
+## Files
+
+- chatbot_pdf_loader.py
+- chatbot_text_loader.py
+- environment.pdf
+- cricket.txt
+
+## Requirements
+
+- Python 3.10+
+- OpenAI API Key
+
+## Installation
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
