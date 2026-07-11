@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111827;
+    color: #f3f4f6;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #9ca3af;
+    font-size: 16px;
+}
+
+/* Layout */
+
+.main-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+@media (max-width: 900px) {
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Cards */
+
+.card {
+    background-color: #1f2937;
+    border-radius: 12px;
+    padding: 25px;
+    border: 1px solid #374151;
+}
+
+.card h2 {
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+/* Form */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #d1d5db;
+    font-size: 14px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #4b5563;
+    border-radius: 8px;
+    background-color: #111827;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Result */
+
+.result-box {
+    background-color: #111827;
+    border: 1px solid #374151;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.result-box h3 {
+    margin-top: 18px;
+    margin-bottom: 8px;
+    color: #d1d5db;
+    font-size: 15px;
+}
+
+.result-box h3:first-child {
+    margin-top: 0;
+}
+
+.score {
+    font-size: 38px;
+    font-weight: bold;
+    color: #60a5fa;
+}
+
+.prediction {
+    font-size: 26px;
+    font-weight: bold;
+    color: #22c55e;
+}
+
+.probability {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f59e0b;
+}
+
+/* Recommendation */
+
+.recommendation {
+    margin-top: 20px;
+    background-color: #111827;
+    border: 1px solid #374151;
+    border-radius: 10px;
+    padding: 16px;
+    color: #d1d5db;
+}
+
+.empty-box {
+    background-color: #111827;
+    border: 1px solid #374151;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    color: #9ca3af;
+}
+
+/* Metrics */
+
+.metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.metric-card {
+    background-color: #111827;
+    border: 1px solid #374151;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.metric-value {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    color: #60a5fa;
+}
+
+.metric-label {
+    display: block;
+    margin-top: 6px;
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .metrics {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .score {
+        font-size: 32px;
+    }
+
+    .prediction,
+    .probability {
+        font-size: 22px;
+    }
+}

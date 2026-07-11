@@ -1,0 +1,107 @@
+{
+  "numeric_features": [
+    "TotalVisits",
+    "Total Time Spent on Website",
+    "Page Views Per Visit"
+  ],
+  "binary_features": [
+    "Do Not Email",
+    "A free copy of Mastering The Interview"
+  ],
+  "categorical_features": [
+    "Lead Origin",
+    "Lead Source",
+    "Last Activity",
+    "Specialization",
+    "What is your current occupation",
+    "City",
+    "Last Notable Activity"
+  ],
+  "categorical_options": {
+    "Lead Origin": [
+      "API",
+      "Landing Page Submission",
+      "Lead Add Form",
+      "Lead Import",
+      "Quick Add Form"
+    ],
+    "Lead Source": [
+      "Direct Traffic",
+      "Google",
+      "Olark Chat",
+      "Organic Search",
+      "Other",
+      "Reference",
+      "Referral Sites",
+      "Welingak Website"
+    ],
+    "Last Activity": [
+      "Converted to Lead",
+      "Email Bounced",
+      "Email Link Clicked",
+      "Email Opened",
+      "Form Submitted on Website",
+      "Not Provided",
+      "Olark Chat Conversation",
+      "Other",
+      "Page Visited on Website",
+      "SMS Sent"
+    ],
+    "Specialization": [
+      "Banking, Investment And Insurance",
+      "Business Administration",
+      "E-Business",
+      "E-COMMERCE",
+      "Finance Management",
+      "Healthcare Management",
+      "Hospitality Management",
+      "Human Resource Management",
+      "IT Projects Management",
+      "International Business",
+      "Marketing Management",
+      "Media and Advertising",
+      "Not Provided",
+      "Operations Management",
+      "Retail Management",
+      "Rural and Agribusiness",
+      "Services Excellence",
+      "Supply Chain Management",
+      "Travel and Tourism"
+    ],
+    "What is your current occupation": [
+      "Businessman",
+      "Housewife",
+      "Not Provided",
+      "Other",
+      "Student",
+      "Unemployed",
+      "Working Professional"
+    ],
+    "City": [
+      "Mumbai",
+      "Not Provided",
+      "Other Cities",
+      "Other Cities of Maharashtra",
+      "Other Metro Cities",
+      "Thane & Outskirts",
+      "Tier II Cities"
+    ],
+    "Last Notable Activity": [
+      "Email Link Clicked",
+      "Email Opened",
+      "Modified",
+      "Olark Chat Conversation",
+      "Other",
+      "Page Visited on Website",
+      "SMS Sent"
+    ]
+  },
+  "cutoff": 0.4,
+  "metrics": {
+    "train_accuracy": 0.8211,
+    "test_accuracy": 0.8139,
+    "test_auc": 0.8878,
+    "test_sensitivity": 0.8034,
+    "test_specificity": 0.8204
+  }
+}
